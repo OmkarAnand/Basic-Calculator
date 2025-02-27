@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           height:fit-content;
+        
+          
+        }
+        
+        body{
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            height:600vh;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            align-items:center;
+            
+            
+        }
+        .container{
+         width: 400px;
+         text-align:left;
+         border-radius:20px;
+         background-color:rgb(137, 128, 128) ;
+         color:white;
+         font-weight:700;
+         font-size:16px;
+         padding:30px;
+         box-shadow: 10px 20px 20px rgba(0,0,0,0.7);
+
+        }
+        input{
+            width:95%;
+            padding:10px;
+            border-radius:10px;
+            margin-bottom:20px;
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:16px;
+            
+        }
+        button{
+          
+            border-radius:6px;
+            font-size:16px;
+            padding:10px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor:pointer;
+            font-weight:bold;
+            border:none;
+            margin-top:10px;  
+        }
+        button:hover{
+            transform:scale(1.1);
+            background-color: rgb(194, 170, 170);
+        }
+        .btn{
+            text-align:center;
+        }
+        h1{
+           
+            margin:20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+ <h1>REGISTER</h1>
+
+ <div class="container">
+
+    <form action="" name="myform" method="POST">
+
+        NAME<br><input type="text" name="fname" ><span class="formerror"><b></b></span><br>
+
+        EMAIL<br><input type="email" name="femail" required><span class="fromerror"><b></b></span><br>
+
+        PASSWORD<br><input type="password" name="fpass"><span class="formerror"><b></b></span><br>
+
+        CONFIRM PASSWORD<br><input type="password" name="fcpass"><span class="formerror"><b></b></span><br>
+        <div class="btn">
+        <button onclick()="return validateform()">SUBMIT</button></div>
+    </form>
+
+ </div>
+ <script>
+    function clearerror(){
+
+    }
+function seterror(id, error){
+
+}
+function validateform(){
+    var returnval=true;
+    var p=document.forms['myform']["fpass"].value;
+    if(p<8 && )
+
+}
+
+ </script>
+</body>
+</html>
